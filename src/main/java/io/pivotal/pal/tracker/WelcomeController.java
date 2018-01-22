@@ -7,15 +7,14 @@ import org.springframework.beans.factory.annotation.Value;
 @RestController
     public class WelcomeController {
 
-    private String hello;
-
+    private String message;
 
     public WelcomeController(@Value("${WELCOME_MESSAGE}") String message) {
-            hello = message;
+            this.message = message;
         }
 
     @GetMapping("/")
     public String sayHello() {
-        return hello;
+        return message;
     }
 }

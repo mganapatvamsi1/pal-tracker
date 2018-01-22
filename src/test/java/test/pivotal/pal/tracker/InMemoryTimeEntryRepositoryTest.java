@@ -1,4 +1,3 @@
-package test.pivotal.pal.tracker;
 
 import io.pivotal.pal.tracker.TimeEntryRepository;
 import io.pivotal.pal.tracker.InMemoryTimeEntryRepository;
